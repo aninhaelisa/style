@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, sans-serif;
+}
+
+.home {
+    height: 100vh;
+    position: relative;
+}
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home-content {
+    position: relative;
+    padding-top: 150px;
+    color: #fff;
+    text-align: center;
+}
+
+.home p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(#ffea76, #f7c44d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-characters 15s infinite ease-in-out;
+}
+
+a{
+    text-decoration: none;
+}
+
+.home h1 {
+    font-family: "Seaweed Script";
+    font-size: 100px;
+    color: #070707;
+}
+  
+  /*------------------------------------------------------------------------------------*/
+
+  @keyframes animate-characters {
+    0% {
+      letter-spacing: 5px;
+    }
+    
+    50% {
+      letter-spacing: 20px;
+    }
+  
+    100% {
+      letter-spacing: 5px;
+    }
+  }
+
+
+  button {
+    margin: 20px;
+  }
+  
+  .custom-btn {
+    width: 180px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  .btn {
+    border: none;
+    background: #ca0000;
+    background: linear-gradient(145deg, #000000 0%, #3d0505 100%);
+    color: #c1ab59;
+    overflow: hidden;
+  }
+  .btn:hover {
+      text-decoration: none;
+      color: #fff;
+  }
+  .btn:before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: -180px;
+      left: 0;
+      width: 30px;
+      height: 100%;
+      background-color: #fff;
+      animation: shiny-btn1 3s ease-in-out infinite;
+  }
+  .btn:hover{
+    opacity: .7;
+  }
+  .btn:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+  }
+  
+  
+  @-webkit-keyframes shiny-btn1 {
+      0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+      80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+      81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+      100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+  }
+
+.linha {
+    margin-left: -35px;
+    display: inline-block;
+    width: 300px;
+    border: 1px solid #000;
+    position: absolute;
+}
+  

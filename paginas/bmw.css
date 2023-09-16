@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@1&family=Satisfy&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, sans-serif;
+}
+
+.home {
+    height: 100vh;
+    position: relative;
+}
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home-content {
+    position: relative;
+    padding-top: 150px;
+    color: #fff;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+  @keyframes slide-in {
+    from {
+      right: -200px;
+    }
+    to {
+      right: 20px;
+    }
+  }
+
+  
+  /*------------------------------------------------------------------------------------*/
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 5px;
+    animation: cor 10s ease-in-out infinite;
+}
+
+
+@keyframes cor {
+    0%{
+        background-color: #ffffff;
+        color: #0d0d0e;
+    }
+
+    25%{
+        background-color: #000000;
+        color: white;
+    }
+
+    50%{
+        background-color: #303030;
+        color: #ffffff;
+    }
+
+    80%{
+        background-color: #c0c0c0;
+        color: #000000;
+    }
+
+    100%{
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+    }
+}
+
+
+.bmw{
+    font-family: "Press Start 2P";
+    animation: neon 1.5s ease-in-out infinite alternate;
+    font-size: 30px;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 2;
+  }
+  
+
+@keyframes neon {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #b6ff00,
+        0 0 70px #b6ff00, 0 0 80px #b6ff00, 0 0 100px #b6ff00, 0 0 150px #b6ff00;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b6ff00,
+        0 0 35px #b6ff00, 0 0 40px #b6ff00, 0 0 50px #b6ff00, 0 0 75px #b6ff00;
+    }
+  }
+
+  .linha {
+    margin-left: -150px;
+    margin-top: -115px;
+    display: inline-block;
+    width: 300px;
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 1;
+}
+  
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.typedtext {
+  margin-top: 30%;
+  border-right: 2px solid black;
+  animation: blinkTextCursor 800ms steps(44) infinite normal;
+  height: 40px;
+  margin-bottom: 55px;
+  color: #ffffff;
+  display: block;
+  position: absolute;
+  font-size: 35px;
+  font-family: 'Inclusive Sans', sans-serif;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .typedtext{
+    margin-top: 75%;
+  }
+  
+  }
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: black;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
